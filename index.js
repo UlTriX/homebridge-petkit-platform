@@ -58,6 +58,7 @@ class PetkitPlatform {
     try {
       await api.login(config.options.username, config.options.password);
     } catch (e) {
+      this.log.log(e)
       this.log.log('Failed to login. Please check if the config.json is correct.')
       return;
     }
@@ -70,7 +71,7 @@ class PetkitPlatform {
     }
 
     for (const device of devices) {
-      //this.log.log(JSON.stringify(device));  
+      //this.log.log(JSON.stringify(device));
       this.addAccessory(device);
     }
 

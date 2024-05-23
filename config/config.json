@@ -5,21 +5,19 @@
         "port": 37876,
         "pin": "034-85-687"
     },
-
     "description": "This is an Homebridge Plugin of Petkit.",
-
     "platforms": [
         {
             "platform": "PetkitPlatform",
             "name": "PetkitPlatform",
-            "options":
-              {
-                "username": "",
-                "password": "",
-                "lang": "es",
-                "countryCode": 34,
-                "debug":false
-              }
+            "options": {
+                "username": "pedrojorgealmeida@gmail.com",
+                "password": "Sacoor123!",
+                "lang": "en",
+                "countryCode": 351,
+                "debug": true
+            }
         }
-    ]
+    ],
+    "accessories": []
 }
